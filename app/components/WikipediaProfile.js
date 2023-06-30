@@ -23,7 +23,7 @@ const WikipediaProfile = ({
         placeholder="Search Wikipedia..."
         className="px-6 py-2 border border-gray-300 focus:outline-none"
       />
-      <button className="px-6 py-2 bg-slate-200 text-black hover:bg-slate-400 focus:outline-none">
+      <button className="px-6 py-2 bg-slate-200 text-black lg:hover:bg-slate-400 focus:outline-none">
         Search
       </button>
     </div>

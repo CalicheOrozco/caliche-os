@@ -18,7 +18,7 @@ export default function Home() {
               myData.skills.languages.map((language, index) => (
                 <li key={`item-language-${index}`} >
               <div
-                className={`flex flex-col items-center p-2 rounded-md hover:bg-[#010081] hover:text-white`}
+                className={`flex flex-col items-center p-2 rounded-md lg:hover:bg-[#010081] lg:hover:text-white`}
               >
                 <Image 
                   src={language.icon}
@@ -37,7 +37,7 @@ export default function Home() {
               myData.skills.libraries.map((librery, index ) => (
                 <li key={`item-library-${index}`} >
               <div
-                className={`flex flex-col items-center p-2 rounded-md hover:bg-[#010081] hover:text-white`}
+                className={`flex flex-col items-center p-2 rounded-md lg:hover:bg-[#010081] lg:hover:text-white`}
               >
                 <Image 
                   src={librery.icon}
@@ -56,7 +56,7 @@ export default function Home() {
               myData.skills.frameworks.map((item, index) => (
                 <li key={`item-${index}`} >
               <div
-                className={`flex flex-col items-center p-2 rounded-md hover:bg-[#010081] hover:text-white`}
+                className={`flex flex-col items-center p-2 rounded-md lg:hover:bg-[#010081] lg:hover:text-white`}
               >
                 <Image
                   src={item.icon}

@@ -38,22 +38,22 @@ const Window = ({ title, children, noPadding, backgroundColor }) => {
           <div className="window-title text-white font-bold py-2">{title}</div>
           <div className="window-buttons flex space-x-1 h-4">
             <AiOutlineMinus
-              className="window-button window-button-close h-6 w-8 hover:bg-blue-600"
+              className="window-button window-button-close h-6 w-8 lg:hover:bg-blue-600"
               onClick={() => {
                 handleClose();
               }}
             />
 
-            {showNavbar ? <VscChromeMaximize className="window-button window-button-close h-6 w-8 hover:bg-blue-600" onClick={() => {
+            {showNavbar ? <VscChromeMaximize className="window-button window-button-close h-6 w-8 lg:hover:bg-blue-600" onClick={() => {
                 handleMaximize();
               }} />
             :
-            <VscChromeRestore className="window-button window-button-close h-6 w-8 hover:bg-blue-600" onClick={() => {
+            <VscChromeRestore className="window-button window-button-close h-6 w-8 lg:hover:bg-blue-600" onClick={() => {
                 handleMaximize();
               }} />}
 
             <AiOutlineClose
-              className="window-button window-button-close h-6 w-8 hover:bg-red-400"
+              className="window-button window-button-close h-6 w-8 lg:hover:bg-red-400"
               onClick={() => {
                 handleClose();
               }}

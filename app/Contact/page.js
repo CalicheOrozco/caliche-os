@@ -17,7 +17,7 @@ export default function Home() {
                 <li key={`Contact-${key}`}>
               <Link href={item.url}>
               <div 
-                className={`flex flex-col items-center p-2 rounded-md hover:bg-[#010081] hover:text-white`}
+                className={`flex flex-col items-center p-2 rounded-md lg:hover:bg-[#010081] lg:hover:text-white`}
               >
                 <Image
                   src={item.icon}
