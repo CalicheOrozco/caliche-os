@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import myData from "@/constants/data";
 import { useContext } from 'react';
 import { showNavbarContext } from './Container'; // Asegúrate de importar showNavbarContext correctamente desde el archivo del componente Container
-
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -37,7 +37,7 @@ const Navbar = () => {
                     : "lg:hover:bg-[#010081]"
                 }`}
               >
-                <img src={item.icon} alt={item.name} width={50} height={50}/>
+                <Image src={item.icon} alt={item.name} width={50} height={50}/>
                 <span>{item.name}</span>
               </div>
             </Link>

@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import Window from "../components/Window";
 import WindowSection from "../components/WindowSection";
 import myData from "@/constants/data";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -14,12 +15,12 @@ export default function Home() {
           </p>
           <WindowSection title={"Programming Languages"}>
             {
-              myData.skills.languages.map((language) => (
-                <li>
+              myData.skills.languages.map((language, index) => (
+                <li key={`item-language-${index}`} >
               <div
                 className={`flex flex-col items-center p-2 rounded-md hover:bg-[#010081] hover:text-white`}
               >
-                <img
+                <Image 
                   src={language.icon}
                   alt={language.name}
                   width={50}
@@ -33,12 +34,12 @@ export default function Home() {
           </WindowSection>
           <WindowSection title={"Libraries"}>
             {
-              myData.skills.libraries.map((librery) => (
-                <li>
+              myData.skills.libraries.map((librery, index ) => (
+                <li key={`item-library-${index}`} >
               <div
                 className={`flex flex-col items-center p-2 rounded-md hover:bg-[#010081] hover:text-white`}
               >
-                <img
+                <Image 
                   src={librery.icon}
                   alt={librery.name}
                   width={50}
@@ -52,12 +53,12 @@ export default function Home() {
           </WindowSection>
           <WindowSection title={"Frameworks"}>
             {
-              myData.skills.frameworks.map((item) => (
-                <li>
+              myData.skills.frameworks.map((item, index) => (
+                <li key={`item-${index}`} >
               <div
                 className={`flex flex-col items-center p-2 rounded-md hover:bg-[#010081] hover:text-white`}
               >
-                <img
+                <Image
                   src={item.icon}
                   alt={item.name}
                   width={50}

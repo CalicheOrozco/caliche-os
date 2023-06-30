@@ -1,5 +1,5 @@
 import React from "react";
-import { FaSearch } from "react-icons/fa";
+import Image from "next/image";
 
 
 const WikipediaProfile = ({
@@ -16,7 +16,7 @@ const WikipediaProfile = ({
     <div className="py-3">
       {/* wikipedia logo */}
       <div className="flex justify-between">
-      <img src="/icons/wiki2.png" alt="Wikipedia logo" className="pb-2 h-20" />
+      <Image src="/icons/wiki2.png" alt="Wikipedia logo" className="pb-2 h-20" />
       <div className="hidden md:flex items-center">
       <input
         type="text"
@@ -50,7 +50,7 @@ const WikipediaProfile = ({
             {name}
           </h1>
           <div className="flex justify-center item">
-          <img src={imageSrc} alt={name} className="pb-2 h-1/2 w-1/2" />
+          <Image src={imageSrc} alt={name} className="pb-2 h-1/2 w-1/2" />
           </div>
           <div className="text-black text-sm">
             <p>

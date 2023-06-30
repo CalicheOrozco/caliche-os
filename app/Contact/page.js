@@ -3,6 +3,7 @@ import Container from "../components/Container";
 import Window from "../components/Window";
 import WindowSection from "../components/WindowSection";
 import myData from "@/constants/data";
+import Image from "next/image";
 
 
 export default function Home() {
@@ -18,7 +19,7 @@ export default function Home() {
               <div 
                 className={`flex flex-col items-center p-2 rounded-md hover:bg-[#010081] hover:text-white`}
               >
-                <img
+                <Image
                   src={item.icon}
                   alt={item.name}
                   width={50}

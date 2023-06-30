@@ -1,6 +1,7 @@
 
 import React from "react";
 import { BsGithub } from "react-icons/bs";
+import Image from "next/image";
 
 const Card = (props) => {
   const { title, github, imgUrl, link } = props;
@@ -8,7 +9,7 @@ const Card = (props) => {
     <div className="relative overflow-hidden rounded-2xl">
       <div className="object-cover">
         <a href={link} target="_blank" className="w-full block shadow-2xl">
-          <img
+          <Image
             src={imgUrl}
             alt={`${title} portfolio`}
             className="transform hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
