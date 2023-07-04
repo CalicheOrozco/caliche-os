@@ -1,9 +1,9 @@
-"use client";
+'use client';
 import React, { useEffect, useState } from "react";
 import Container from "../components/Container";
 import Window from "../components/Window";
 
-function page() {
+function Page() {
   const [frases, setFrases] = useState([]);
   const [frase, setFrase] = useState(null);
 
@@ -65,4 +65,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
