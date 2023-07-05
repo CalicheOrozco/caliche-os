@@ -16,7 +16,7 @@ const WikipediaProfile = ({
     <div className="py-3">
       {/* wikipedia logo */}
       <div className="flex justify-between">
-      <Image src="/icons/wiki2.png" alt="Wikipedia logo" className="pb-2 h-20" />
+      <Image src="/icons/wiki2.png" alt="Wikipedia logo" className="pb-2 h-20" width={200} height={300} />
       <div className="hidden md:flex items-center">
       <input
         type="text"
@@ -45,12 +45,12 @@ const WikipediaProfile = ({
             ))}
           </ul>
         </div>
-        <div className="ml-4 p-3 rounded bg-slate-200">
+        <div className="ml-4 p-3 rounded bg-slate-300">
           <h1 className="text-xl text-black font-semibold text-center">
             {name}
           </h1>
           <div className="flex justify-center item">
-          <Image src={imageSrc} alt={name} className="pb-2 h-1/2 w-1/2" />
+          <Image src={imageSrc} alt={name} className="pb-2" width={600} height={1000} />
           </div>
           <div className="text-black text-sm">
             <p>
