@@ -13,8 +13,8 @@ const Card = (props) => {
             src={imgUrl}
             alt={`${title} portfolio`}
             className="transform lg:hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
-            width={500}
-            height={300}
+            width={300}
+            height={50}
           />
         </a>
       </div>
