@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Navbar from "./Navbar";
 import { createContext } from 'react';
+import Script from "next/script";
 
 
 
@@ -45,7 +46,25 @@ function Container({ children }) {
               }`}>
             <Navbar />
         </div>
-        
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
+        />
+
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-G6J4VPVBQV', {
+          page_path: window.location.pathname,
+          });
+        `,
+          }}
+        />
         <div className={`flex-grow justify-center ${isVisible ? "": "hidden"}`}>{children}</div>
       </div>
       </showNavbarContext.Provider>
