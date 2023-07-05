@@ -10,23 +10,28 @@ const roboto = Roboto({
 export const metadata = {
   title: 'Caliche Orozco | Landing Page',
   description: 'Study Engineering in Computer Systems, Promoter of technology and science events in order to solve social problems and improve the Latin American economy using technology as the main ally.',
-  icons: [
-    {
-      href: '/favicon.ico',
-      rel: 'icon',
+  icons: {
+    icon: '/icon.ico',
+    shortcut: '/icon.ico',
+    apple: '/icon.ico',
+    other: {
+      rel: 'apple-touch-icon-precomposed',
+      url: '/icon.ico',
     },
-    {
-      href: '/favicon.ico',
-      rel: 'apple-touch-icon',
-      sizes: '180x180',
-    },
-  ],
+  },
 
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="shortcut icon" href="/icon.ico" />
+      <link rel="icon" href="/icon.ico" />
+      <link rel="apple-touch-icon" href="/icon.ico" />
+      <link
+        rel="apple-touch-icon-precomposed"
+        href="/icon.ico"
+      />
       <body className={roboto.className}>{children}</body>
     </html>
   )
