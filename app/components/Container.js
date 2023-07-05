@@ -40,7 +40,7 @@ function Container({ children }) {
         />
         
       </div>
-      <div className="relative z-10 flex w-full min-h-screen">
+      <div className="relative z-10 flex w-full max-h-screen">
         <div className={`${ !showNavbar ? "hidden" : "w-full lg:w-min" 
               }`}>
             <Navbar />

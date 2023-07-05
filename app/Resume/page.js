@@ -3,7 +3,7 @@ import Window from "../components/Window";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen">
+    <main className="relative max-h-screen">
       <Container noIndex={true}>
       <Window title="Resume" noPadding={true} backgroundColor="bg-[#2a2a2e]">
       <div className="h-full">

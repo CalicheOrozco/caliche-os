@@ -322,7 +322,7 @@ const myData = {
       icon: "/companies/estudiantes.jpg",
       company: "ITVER Green Students.",
       location: " Veracruz, México",
-      startDate: "Agos 2017",
+      startDate: "Aug 2017",
       endDate: "Jun 2022",
       companyLink: "https://www.facebook.com/EstudiantesVerdesMx",
       desc: [

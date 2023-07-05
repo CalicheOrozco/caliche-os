@@ -27,7 +27,7 @@ function Page() {
   }, []);
 
   return (
-    <main className="relative min-h-screen">
+    <main className="relative max-h-screen">
       <Container noIndex={true}>
         <Window title="I never, never">
           {frases?.length > 0 ? (

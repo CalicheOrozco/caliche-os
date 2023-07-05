@@ -8,7 +8,7 @@ export default function Home() {
 
   
   return (
-    <main className="relative min-h-screen">
+    <main className="relative max-h-screen">
       <Container noIndex={true}>
       <Window title="Experience">
         {myData.experience.map((exp, key) => (

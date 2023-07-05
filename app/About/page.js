@@ -15,7 +15,7 @@ export default function Home() {
   ];
 
   return (
-    <main className="relative min-h-screen">
+    <main className="relative max-h-screen">
       <Container noIndex={true}>
         <Window title="About">
         <WikipediaProfile name={name} imageSrc={imageSrc} description={description} details={details} role={myData.designation} currentJob={myData.about.currentCompany} currentProject={myData.about.currentProject} education={myData.about.education} languages={myData.about.languages} />

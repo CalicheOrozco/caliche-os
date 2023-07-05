@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen">
+    <main className="relative max-h-screen">
       <Container noIndex={true}>
         <Window title="Skills">
           <p>
