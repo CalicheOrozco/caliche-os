@@ -66,10 +66,6 @@ function Container({ children }) {
         <div className={`${!showNavbar ? "hidden" : "w-full lg:w-min"}`}>
           <DynamicNavbar />
         </div>
-        <Script
-          strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"
-        />
         <div
           className={`flex-grow justify-center ${isVisible ? "" : "hidden"}`}
         >
