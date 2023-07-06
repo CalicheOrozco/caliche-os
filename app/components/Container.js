@@ -39,20 +39,13 @@ export const showNavbarContext = createContext();
 
 function Container({ children }) {
     const pathname = usePathname();
-    const [showNavbar, setShowNavbar] = useState(true)
+    const [showNavbar, setShowNavbar] = useState(false)
     const [isVisible, setisVisible] = useState(true);
 
     useEffect(() => {
-        if (window.innerWidth < 1024) {
-            if (pathname != "/" ){
-                setShowNavbar(false);
-            } else {
-                setShowNavbar(true);
-            }
-            
-        } else {
-            setShowNavbar(true);
-        }
+      if (pathname === "/" ){
+        setShowNavbar(true);
+    } 
     }, []);
 
     
@@ -60,7 +53,7 @@ function Container({ children }) {
     <showNavbarContext.Provider
       value={{ showNavbar, setShowNavbar, isVisible, setisVisible }}
     >
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 max-h-screen">
         <Image
           src="/background.png"
           alt="Background"
