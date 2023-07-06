@@ -37,7 +37,7 @@ const Navbar = () => {
                     : "lg:hover:bg-[#010081]"
                 }`}
               >
-                <Image src={item.icon} alt={item.name} width={50} height={50}/>
+                <Image src={item.icon} alt={item.name} width={50} height={50} priority />
                 <span>{item.name}</span>
               </div>
             </Link>

@@ -1,9 +1,58 @@
 "use client";
 import Container from "../components/Container";
 import Window from "../components/Window";
-import WindowSection from "../components/WindowSection";
 import myData from "@/constants/data";
 import Image from "next/image";
+import dynamic from 'next/dynamic'
+
+const DynamicWindowSection = dynamic(
+  () => import("../components/WindowSection"),
+  {
+    loading: () => (
+      <div className="animate-pulse flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
+          <div className=" bg-slate-700 h-14 w-14"></div>
+          <div className=" bg-slate-700 h-4 w-14"></div>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <div className=" bg-slate-700 h-14 w-14"></div>
+          <div className=" bg-slate-700 h-4 w-14"></div>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <div className=" bg-slate-700 h-14 w-14"></div>
+          <div className=" bg-slate-700 h-4 w-14"></div>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <div className=" bg-slate-700 h-14 w-14"></div>
+          <div className=" bg-slate-700 h-4 w-14"></div>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <div className=" bg-slate-700 h-14 w-14"></div>
+          <div className=" bg-slate-700 h-4 w-14"></div>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <div className=" bg-slate-700 h-14 w-14"></div>
+          <div className=" bg-slate-700 h-4 w-14"></div>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <div className=" bg-slate-700 h-14 w-14"></div>
+          <div className=" bg-slate-700 h-4 w-14"></div>
+        </div>
+
+        <div className="flex flex-col gap-1">
+          <div className=" bg-slate-700 h-14 w-14"></div>
+          <div className=" bg-slate-700 h-4 w-14"></div>
+        </div>
+      </div>
+    ),
+  }
+);
 
 export default function Home() {
   return (
@@ -13,7 +62,7 @@ export default function Home() {
           <p>
             {myData.skills.description}
           </p>
-          <WindowSection title={"Programming Languages"}>
+          <DynamicWindowSection title={"Programming Languages"}>
             {
               myData.skills.languages.map((language, index) => (
                 <li key={`item-language-${index}`} >
@@ -31,8 +80,8 @@ export default function Home() {
             </li>
               ))
             }
-          </WindowSection>
-          <WindowSection title={"Libraries"}>
+          </DynamicWindowSection>
+          <DynamicWindowSection title={"Libraries"}>
             {
               myData.skills.libraries.map((librery, index ) => (
                 <li key={`item-library-${index}`} >
@@ -50,8 +99,8 @@ export default function Home() {
             </li>
               ))
             }
-          </WindowSection>
-          <WindowSection title={"Frameworks"}>
+          </DynamicWindowSection>
+          <DynamicWindowSection title={"Frameworks"}>
             {
               myData.skills.frameworks.map((item, index) => (
                 <li key={`item-${index}`} >
@@ -69,7 +118,7 @@ export default function Home() {
             </li>
               ))
             }
-          </WindowSection>
+          </DynamicWindowSection>
         </Window>
       </Container>
     </main>
