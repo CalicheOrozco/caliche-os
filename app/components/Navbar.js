@@ -8,20 +8,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
-  const {
-    setisVisible,
-    setShowNavbar,
-  } = useContext(showNavbarContext);
-
-  const handleClick = () => {
-    
-    setisVisible(true);
-    if (window.innerWidth < 1024) {
-      setShowNavbar(false);
-    }
-  };
-
-
+  
 
   return (
     <nav className={`min-h-screen flex justify-center items-center lg:justify-start `}>
@@ -29,7 +16,7 @@ const Navbar = () => {
       <ul className="flex flex-col gap-4 lg:p-10">
         {myData.navmenu.map((item, index) => (
           <li  key={`navbar-item-${index}`} >
-            <Link href={item.url} onClick={() =>{handleClick()}}>
+            <Link href={item.url}>
               <div
                 className={`flex flex-col items-center p-2 rounded-md ${
                   pathname.startsWith(`${item.url}`)
