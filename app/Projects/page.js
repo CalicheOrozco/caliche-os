@@ -2,23 +2,11 @@ import Container from "../components/Container";
 import Window from "../components/Window";
 import myData from "@/constants/data";
 import dynamic from 'next/dynamic'
+import ProjectSkeletoon from "../Skeletoon/ProjectSkeletoon";
 
 const DynamicCard = dynamic(() => import('../components/Card'), {
   loading: () => (
-    <div className="animate-pulse flex flex-col gap-4 lg:p-10 h-screen items-center justify-center">
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-      <div className=" bg-slate-700 h-40 w-80"></div>
-    </div>
+    <ProjectSkeletoon />
   ),
 })
 
