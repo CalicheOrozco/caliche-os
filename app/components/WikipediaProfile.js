@@ -82,7 +82,7 @@ const WikipediaProfile = ({
               height={50}
             />
           </div>
-          <div className="text-black text-sm">
+          <div className="text-black text-sm flex flex-col gap-y-1 ">
             <p>
               <span className="font-bold">Role:</span> {role}
             </p>
