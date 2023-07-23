@@ -59,7 +59,6 @@ function Container({ children }) {
           style={{ objectFit: "cover" }}
           quality={100}
           fill={true}
-          className=""
         />
       </div>
       <div className="relative z-10 flex w-full max-h-screen">

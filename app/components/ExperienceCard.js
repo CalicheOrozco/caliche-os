@@ -17,13 +17,13 @@ const ExperienceCard = ({
     <>
       <div className="bg-white rounded-lg  p-3 flex">
         <div className="pr-5">
-        <Link href={link}>
+        <Link href={link} target="_blank">
           <Image src={imageUrl} alt={companyName} className=" w-40 h-30 sm:w-16 sm:h-16 mr-4" width={500} height={500} />
         </Link>
         </div>
         <div>
           <h3 className="text-xl font-bold">{jobTitle}</h3>
-          <Link href={link}>
+          <Link href={link} target="_blank">
           <p className="text-lg">{companyName}</p>
           </Link>
           <p className="text-gray-600 text-sm">

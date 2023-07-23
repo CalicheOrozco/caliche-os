@@ -27,7 +27,7 @@ export default function Home() {
             {
               myData.socialLinks.map((item, key) => (
                 <li key={`Contact-${key}`}>
-              <Link href={item.url}>
+              <Link href={item.url} target="_blank">
               <div 
                 className={`flex flex-col items-center p-2 rounded-md lg:hover:bg-[#010081] lg:hover:text-white`}
               >
