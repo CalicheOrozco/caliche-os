@@ -14,7 +14,8 @@ const Card = (props) => {
           <Image
             src={imgUrl}
             alt={`${title} portfolio`}
-            className="transform lg:hover:scale-125 transition duration-2000 ease-out object-cover h-full w-full"
+                
+            className=" lg:hover:animate-pulse lg:hover:animate-infinite lg:hover:animate-duration-1000 lg:hover:animate-ease-linear lg:hover:animate-alternate object-cover h-full w-full"
             width={300}
             height={50}
           />
