@@ -69,8 +69,8 @@ const WikipediaProfile = ({
             ))}
           </ul>
         </div>
-        <div className="ml-4 sm:w-1/2 xl:w-full p-3 rounded bg-slate-300">
-          <h1 className="text-xl text-black font-semibold text-center">
+        <div className="ml-4 sm:w-1/2 xl:w-full rounded bg-slate-300">
+          <h1 className="text-xl text-black font-semibold p-1 text-center">
             {name}
           </h1>
           <div className="flex justify-center">
@@ -82,7 +82,7 @@ const WikipediaProfile = ({
               height={50}
             />
           </div>
-          <div className="text-black text-sm flex flex-col gap-y-1 ">
+          <div className="text-black text-sm flex p-3 flex-col gap-y-1 ">
             <p>
               <span className="font-bold">Role:</span> {role}
             </p>
