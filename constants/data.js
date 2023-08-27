@@ -38,46 +38,74 @@ const myData = {
   ],
   projects: [
     {
+      title: "Caliche Translate",
+      link: "https://caliches-translate.vercel.app/",
+      github: "https://github.com/CalicheOrozco/Caliches-Translate",
+      imgUrl: "/portafolio17.png",
+      stack: [
+        "Next.js",
+        "React",
+        "Tailwind",
+        "Typescript",
+        "Javascript",
+        "API",
+      ],
+    },
+    {
+      title: "Caliche Portfolio 2022",
+      link: "https://caliche-next.vercel.app/",
+      github: "https://github.com/CalicheOrozco/caliche-next",
+      imgUrl: "/portafolio16.png",
+      stack: ["Next.js", "React", "Tailwind", "Javascript"],
+    },
+    {
       title: "Robocoons website",
       link: "https://robocoons.vercel.app/",
       github: "https://github.com/CalicheOrozco/robocoons",
       imgUrl: "/portafolio14.png",
+      stack: ["React", "Tailwind", "Javascript", "HTML/CSS"],
     },
     {
       title: "English Certify by Caliche",
       link: "https://www.englishcertify.com/",
       github: "https://github.com/CalicheOrozco/duolingo-test-practice-caliche",
       imgUrl: "/portafolio13.png",
+      stack: ["React", "Tailwind", "Javascript", "HTML/CSS"],
     },
     {
       title: "Memory Game by Caliche",
       link: "https://memory-game-caliche.vercel.app/",
       github: "https://github.com/CalicheOrozco/memory-game",
       imgUrl: "/portafolio12.png",
+      stack: ["React", "Tailwind", "Javascript", "HTML/CSS"],
     },
     {
       title: "Caliche Productivity APP",
       link: "https://productivity-calicheapp.vercel.app/",
       github: "https://github.com/CalicheOrozco/productivity-calicheapp",
       imgUrl: "/portafolio15.png",
+      stack: ["React", "Tailwind", "Javascript", "HTML/CSS"],
     },
     {
       title: "English Tenses by Caliche",
       link: "https://english-tenses-caliche.vercel.app/",
       github: "https://github.com/CalicheOrozco/english-tenses-caliche",
       imgUrl: "/portafolio11.jpg",
+      stack: ["React", "Tailwind", "Javascript", "HTML/CSS", "API"],
     },
     {
       title: "Caliche weather APP",
       link: "https://caliche-weather-app.vercel.app/",
       github: "https://github.com/CalicheOrozco/english-tenses-caliche",
       imgUrl: "/portafolio10.jpg",
+      stack: ["React", "Tailwind", "Javascript", "HTML/CSS", "API"],
     },
     {
       title: "Landingpage 2021",
       link: "https://calicheorozco-old-page.vercel.app/",
       github: "https://github.com/CalicheOrozco/calicheorozco-old-page",
       imgUrl: "/portafolio8.jpg",
+      stack: ["React", "Tailwind", "Javascript", "HTML/CSS"],
     },
 
     {
@@ -85,6 +113,7 @@ const myData = {
       link: "https://caliche-movies-calicheorozco.vercel.app/",
       github: "https://github.com/CalicheOrozco/caliche-movies",
       imgUrl: "/portafolio9.jpg",
+      stack: ["HTML/CSS", "Javascript", "API"],
     },
 
     {
@@ -92,12 +121,14 @@ const myData = {
       link: "https://futurnow-caliche-calicheorozco.vercel.app/",
       github: "https://github.com/CalicheOrozco/FutrNow",
       imgUrl: "/portafolio6.jpg",
+      stack: ["React", "Javascript", "Bootstrap", "HTML/CSS"],
     },
     {
       title: "Bookmark App",
       link: "https://bookmark-app-caliche-calicheorozco.vercel.app/",
       github: "https://github.com/CalicheOrozco/evaluacion-bedu",
       imgUrl: "/portafolio7.jpg",
+      stack: ["React", "Javascript", "Bootstrap", "HTML/CSS"],
     },
     {
       title: "SALSA CATRINA",
@@ -105,6 +136,7 @@ const myData = {
       github:
         "https://github.com/CalicheOrozco/Desarrollo-web/tree/master/LandingPages/Salsas-la-catrina",
       imgUrl: "/portafolio1.jpg",
+      stack: ["HTML/CSS", "Bootstrap"],
     },
     {
       title: "PLATZICONF MEXICO",
@@ -112,6 +144,7 @@ const myData = {
       github:
         "https://github.com/CalicheOrozco/Desarrollo-web/tree/master/LandingPages/Platzi-bootstrap",
       imgUrl: "/portafolio2.jpg",
+      stack: ["HTML/CSS", "Bootstrap"],
     },
     {
       title: "Countdown Arduino Day 2021",
@@ -119,6 +152,7 @@ const myData = {
       github:
         "https://github.com/CalicheOrozco/Desarrollo-web/tree/master/Countdown/2021/countdown",
       imgUrl: "/portafolio5.jpg",
+      stack: ["HTML/CSS", "Bootstrap","Javascript"],
     },
     {
       title: "WWE NETWORK",
@@ -126,6 +160,7 @@ const myData = {
       github:
         "https://github.com/CalicheOrozco/Desarrollo-web/tree/master/WWE%20Network",
       imgUrl: "/portafolio3.jpg",
+      stack: ["HTML/CSS", "Javascript", "Bootstrap"],
     },
     {
       title: "SIMON DICE",
@@ -133,6 +168,7 @@ const myData = {
       github:
         "https://github.com/CalicheOrozco/Desarrollo-web/tree/master/SimonDice",
       imgUrl: "/portafolio4.jpg",
+      stack: ["HTML/CSS", "Javascript"],
     },
   ],
   skills: {
@@ -212,8 +248,8 @@ const myData = {
     currentCompany: "NTT Data",
     currentProject: "Tenaris NMS Order Dressing",
     currentProjectUrl: "https://github.com/bedu-hq",
-    education:"Veracruz Technological Institute",
-    languages:"Spanish and English"
+    education: "Veracruz Technological Institute",
+    languages: "Spanish and English",
   },
   experience: [
     {
@@ -373,19 +409,17 @@ const myData = {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/calicheorozco/",
       icon: "/social/linkedin.ico",
-    }
-      ,
-      {
-        name: "GitHub",
-        url: "https://github.com/CalicheOrozco",
-        icon: "/social/github.ico",
-      },
-      {
-        name: "Mail",
-        url: "mailto:info@calicheorozco.com",
-        icon: "/social/mail.png",
-      },
-
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/CalicheOrozco",
+      icon: "/social/github.ico",
+    },
+    {
+      name: "Mail",
+      url: "mailto:info@calicheorozco.com",
+      icon: "/social/mail.png",
+    },
   ],
 };
 
