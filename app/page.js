@@ -6,7 +6,7 @@ import { NextUIProvider } from "@nextui-org/react";
 export default function Home() {
   return (
     <NextUIProvider>
-      <main className="relative max-h-screen">
+      <main className="relative">
         <Container />
       </main>
     </NextUIProvider>

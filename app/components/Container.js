@@ -1,10 +1,9 @@
-'use client'
+"use client";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { createContext } from 'react';
-import dynamic from 'next/dynamic'
-
+import { createContext } from "react";
+import dynamic from "next/dynamic";
 
 const DynamicNavbar = dynamic(() => import("../components/Navbar"), {
   loading: () => (
@@ -30,29 +29,25 @@ const DynamicNavbar = dynamic(() => import("../components/Navbar"), {
   ),
 });
 
-
-
 // Crea el contexto
 export const showNavbarContext = createContext();
 
-
 function Container({ children }) {
-    const pathname = usePathname();
-    const [showNavbar, setShowNavbar] = useState(false)
-    const [isVisible, setisVisible] = useState(true);
+  const pathname = usePathname();
+  const [showNavbar, setShowNavbar] = useState(false);
+  const [isVisible, setisVisible] = useState(true);
 
-    useEffect(() => {
-      if (pathname === "/" ){
-        setShowNavbar(true);
-    } 
-    }, []);
+  useEffect(() => {
+    if (pathname === "/") {
+      setShowNavbar(true);
+    }
+  }, []);
 
-    
   return (
     <showNavbarContext.Provider
       value={{ showNavbar, setShowNavbar, isVisible, setisVisible }}
     >
-      <div className="absolute inset-0 z-0 max-h-screen">
+      <div className="absolute inset-0 z-0">
         <Image
           src="/background.png"
           alt="Background"
