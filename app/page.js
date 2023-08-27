@@ -1,3 +1,4 @@
+"use client";
 import Container from "./components/Container";
 // 1. import `NextUIProvider` component
 import { NextUIProvider } from "@nextui-org/react";
