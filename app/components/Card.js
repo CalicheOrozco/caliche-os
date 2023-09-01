@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Badge from "./Badge";
 
+
 const Card = (props) => {
   const { title, github, imgUrl, link, stack } = props;
   return (

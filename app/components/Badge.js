@@ -114,6 +114,17 @@ export default function Badge({ type }) {
           Bootstrap
         </Chip>
       );
+    case "Redux":
+      return (
+        <Chip
+          classNames={{
+            base: "bg-purple-500",
+            content: "text-white font-bold",
+          }}
+        >
+          Redux
+        </Chip>
+      );
     default:
       return (
         <Chip

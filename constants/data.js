@@ -49,6 +49,7 @@ const myData = {
         "Typescript",
         "Javascript",
         "API",
+        "Redux",
       ],
     },
     {
@@ -152,7 +153,7 @@ const myData = {
       github:
         "https://github.com/CalicheOrozco/Desarrollo-web/tree/master/Countdown/2021/countdown",
       imgUrl: "/portafolio5.jpg",
-      stack: ["HTML/CSS", "Bootstrap","Javascript"],
+      stack: ["HTML/CSS", "Bootstrap", "Javascript"],
     },
     {
       title: "WWE NETWORK",
