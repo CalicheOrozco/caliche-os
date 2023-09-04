@@ -38,6 +38,13 @@ const myData = {
   ],
   projects: [
     {
+      title: "Calichecraft",
+      link: "https://calichecraft.vercel.app/",
+      github: "https://github.com/CalicheOrozco/calichecraft",
+      imgUrl: "/portafolio18.png",
+      stack: ["React", "ThreeJS", "HTML/CSS", "Javascript"],
+    },
+    {
       title: "Caliche Translate",
       link: "https://caliches-translate.vercel.app/",
       github: "https://github.com/CalicheOrozco/Caliches-Translate",
@@ -118,7 +125,7 @@ const myData = {
     },
 
     {
-      title: "Futurnow React Landingpage",
+      title: "Futurnow Landingpage",
       link: "https://futurnow-caliche-calicheorozco.vercel.app/",
       github: "https://github.com/CalicheOrozco/FutrNow",
       imgUrl: "/portafolio6.jpg",
@@ -148,7 +155,7 @@ const myData = {
       stack: ["HTML/CSS", "Bootstrap"],
     },
     {
-      title: "Countdown Arduino Day 2021",
+      title: "Arduino Day 2021",
       link: "https://countdownarduino21-caliche.surge.sh",
       github:
         "https://github.com/CalicheOrozco/Desarrollo-web/tree/master/Countdown/2021/countdown",
