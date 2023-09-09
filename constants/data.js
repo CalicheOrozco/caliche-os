@@ -41,7 +41,7 @@ const myData = {
       title: "SpaceX launches 🚀",
       link: "https://spacex-launches-six.vercel.app/lastest",
       github: "https://github.com/CalicheOrozco/spacex-launches",
-      imgUrl: "/portafolio18.png",
+      imgUrl: "/portafolio19.png",
       stack: ["Astro", "Tailwind", "HTML/CSS", "Typescript"],
     },
     {
