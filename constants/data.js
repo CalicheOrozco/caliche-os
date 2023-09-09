@@ -38,6 +38,13 @@ const myData = {
   ],
   projects: [
     {
+      title: "SpaceX launches 🚀",
+      link: "https://spacex-launches-six.vercel.app/lastest",
+      github: "https://github.com/CalicheOrozco/spacex-launches",
+      imgUrl: "/portafolio18.png",
+      stack: ["Astro", "Tailwind", "HTML/CSS", "Typescript"],
+    },
+    {
       title: "Calichecraft",
       link: "https://calichecraft.vercel.app/",
       github: "https://github.com/CalicheOrozco/calichecraft",

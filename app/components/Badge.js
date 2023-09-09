@@ -125,6 +125,18 @@ export default function Badge({ type }) {
           Redux
         </Chip>
       );
+    case "Astro":
+      return (
+        <Chip
+          classNames={{
+            base: "bg-purple-500",
+            content: "text-white font-bold",
+          }}
+        >
+          Astro
+        </Chip>
+      );
+
     default:
       return (
         <Chip
